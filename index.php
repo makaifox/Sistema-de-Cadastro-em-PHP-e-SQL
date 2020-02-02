@@ -162,7 +162,7 @@ function verifica(value){
     </tr>
     <tr>
       <td width="69">Nome Fantasia:</td>
-      <td width="546"><input name="fantasia" type="text" id="fantasia" size="70" maxlength="60" class="text" />
+      <td width="546"><input name="fantasia" type="text" id="fantasia" size="70" maxlength="60" class="text" /></td>
     </tr>
     <tr>
       <td width="69">CPF:</td>
@@ -171,7 +171,7 @@ function verifica(value){
     </tr>
     <tr>
       <td width="69">CNPJ:</td>
-      <td width="40"><input name="cnpj" type="text" id="cnpj" maxlength="18"  OnKeyPress="formatarcampo('###.###.##/####-##', this)"  />
+      <td width="40"><input name="cnpj" type="text" id="cnpj" maxlength="18"  OnKeyPress="formatarcampo('###.###.##/####-##', this)"  /></td>
     </tr>
     <tr>
       <td width="69">Razão Social:</td>
@@ -184,11 +184,11 @@ function verifica(value){
     </tr>
     <tr>
       <td>Número:</td>
-      <td><input name="numero" type="text" id="numero" maxlength="5" />
+      <td><input name="numero" type="text" id="numero" maxlength="5" /></td>
     </tr>
     <tr>
       <td>Complemento:</td>
-      <td><input name="complemento" type="text" id="complemento" maxlength="20" class="text"/>
+      <td><input name="complemento" type="text" id="complemento" maxlength="20" class="text"/></td>
     </tr>
     <tr>
       <td>CEP:</td>
@@ -207,7 +207,7 @@ function verifica(value){
     </tr>
   <tr>  
      <td>Email:</td>
-      <td><input name="email" type="email" id="email" size="70" maxlength="60" class="text"/>
+      <td><input name="email" type="email" id="email" size="70" maxlength="60" class="text"/></td>
     </tr>
 
 
@@ -226,20 +226,17 @@ function verifica(value){
 
     <tr>
       <td>Cliente:</td>
-      <td><input type="checkbox" name="cliente" id="cliente" />
+      <td><input type="checkbox" name="cliente" id="cliente" /></td>
 
-        
-          
-        <span class="style1">selecione ao menos uma opção</span></td>
     </tr>
     <tr>
       <td>Fornecedor:</td>
-      <td><input type="checkbox" name="fornecedor" id="fornecedor" />
+      <td><input type="checkbox" name="fornecedor" id="fornecedor" /></td>
 
     </tr>
     <tr>
       <td>Funcionário:</td>
-      <td><input type="checkbox" name="funcionario" id="funcionario" />
+      <td><input type="checkbox" name="funcionario" id="funcionario" /></td>
 
     </tr>
    
