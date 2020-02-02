@@ -178,6 +178,7 @@ function verifica(value){
       <td width="546"><input name="nome" type="text" id="nome" size="70" maxlength="60" class="text" />
         <span class="style1">*</span></td>
     </tr>
+    <tr>
     <td>Endereço:</td>
       <td><input name="endereco" type="text" id="rua" size="70" maxlength="70" class="text"/>
         <span class="style1">*</span></td>
@@ -257,7 +258,7 @@ function verifica(value){
 </form>
   <!--FIM DO FORMULARIO  -->
 
-</div> </section></li>
+</div> 
 
 
 </body>
