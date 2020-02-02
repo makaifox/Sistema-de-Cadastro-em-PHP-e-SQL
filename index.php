@@ -3,6 +3,7 @@
 <meta charset=utf-8 />
 <title>CADASTRO DE CLIENTES </title>
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+<script type="text/javascript" src="view.js"></script>
 <style type="text/css">
 .style1 {
 	color: #FF0000;
@@ -17,11 +18,16 @@ nav {
 .text {
   text-transform:uppercase;
 }
-
-
 </style>
-<!--<script type="text/javascript" src="view.js"></script>-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script type="text/javascript">
+//TRANSFORMA EM MAIUSCULA PARA ENVIAR 
+jQuery('up').keyup(function(){
+   $(this).val($(this).val().toUpperCase());
+});
+
+
+
 // FORMATA DADOS NO FORMULARIO 
   function formatarcampo(mascara, documento){
   var i = documento.value.length;
@@ -139,11 +145,11 @@ function verifica(value){
     <!--FORMULARIO DE CADASTRO  -->
     <h1 class="card-header blockquote text-center">FORMULÁRIO DE CADASTRO</h1>
     <br>
-<form id="cadastro" name="cadastro" method="post" action="cadastro.php" onsubmit="return validaCampo(); return false;" >
+<form id="cadastro" name="cadastro" method="post" action="cadastro.php" action="javascript:void(0)" onsubmit="return validaCampo(); return false;" >
   <table width="625" border="0"  cellspacing="0" class="tabela ">
     <tr>
       <td width="40">Código:</td>
-      <td width="30"><input name="codigo" type="text" id="codigo" size="30" maxlength="30" />
+      <td width="30"><input name="codigo" type="text" id="codigo" size="30" maxlength="30"  />
         <span class="style1">*</span></td>
     </tr>
     <tr>
@@ -157,12 +163,12 @@ function verifica(value){
     </tr>
     <tr>
       <td width="69">Nome:</td>
-      <td width="546"><input name="nomePF" type="text" id="nomePF" size="70" maxlength="60" class="text" />
+      <td width="546"><input name="nomePF" type="text" id="nomePF" size="70" maxlength="60" class="up"  />
         <span class="style1">*</span></td>
     </tr>
     <tr>
       <td width="69">Nome Fantasia:</td>
-      <td width="546"><input name="fantasia" type="text" id="fantasia" size="70" maxlength="60" class="text" /></td>
+      <td width="546"><input name="fantasia" type="text" id="fantasia" size="70" maxlength="60" class="up" /></td>
     </tr>
     <tr>
       <td width="69">CPF:</td>
@@ -175,12 +181,12 @@ function verifica(value){
     </tr>
     <tr>
       <td width="69">Razão Social:</td>
-      <td width="546"><input name="nome" type="text" id="nome" size="70" maxlength="60" class="text" />
+      <td width="546"><input name="nome" type="text" id="nome" size="70" maxlength="60" class="up"/>
         <span class="style1">*</span></td>
     </tr>
     <tr>
     <td>Endereço:</td>
-      <td><input name="endereco" type="text" id="rua" size="70" maxlength="70" class="text"/>
+      <td><input name="endereco" type="text" id="rua" size="70" maxlength="70" class="up"/>
         <span class="style1">*</span></td>
     </tr>
     <tr>
@@ -189,7 +195,7 @@ function verifica(value){
     </tr>
     <tr>
       <td>Complemento:</td>
-      <td><input name="complemento" type="text" id="complemento" maxlength="20" class="text"/></td>
+      <td><input name="complemento" type="text" id="complemento" maxlength="20" class="up"/></td>
     </tr>
     <tr>
       <td>CEP:</td>
@@ -198,17 +204,17 @@ function verifica(value){
     </tr>
     <tr>
       <td>Município:</td>
-      <td><input name="municipio" type="text" id="bairro" maxlength="20" class="text"/>
+      <td><input name="municipio" type="text" id="bairro" maxlength="20" class="up"/>
         <span class="style1">*</span></td>
     </tr>
     <tr>
       <td>Cidade:</td>
-      <td><input name="cidade" type="text" id="cidade" maxlength="20" class="text" />
+      <td><input name="cidade" type="text" id="cidade" maxlength="20" class="up"/>
         <span class="style1">*</span></td>
     </tr>
   <tr>  
      <td>Email:</td>
-      <td><input name="email" type="email" id="email" size="70" maxlength="60" class="text"/></td>
+      <td><input name="email" type="email" id="email" size="70" maxlength="60" class="up"/></td>
     </tr>
 
 

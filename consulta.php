@@ -4,6 +4,7 @@
 <meta charset=utf-8 />
 <title>CONSULTA CADASTRO DE CLIENTES </title>
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+<!-- CSS da página -->
 <style>
   body {
     width:100%;
@@ -33,8 +34,9 @@ form ul {
   </style>
 
 </head>
-<body class="bg-primary justify-content-center">
 
+<body class="bg-primary justify-content-center">
+<!-- Início da página -->
 <nav>
 <ul class="nav justify-content-center bg-light center-block">
   <li class="nav-item">
@@ -63,6 +65,8 @@ form ul {
       </li>
     </ul>
 </form>
+
+<!-- Inicio da tabela --> 
     <table  border="2"  cellspacing="0" class=" table-hover center-block bg-light" >
   
 <tr>
@@ -86,7 +90,7 @@ form ul {
 
     </tr>
 <?php
-
+// PHP BUSCA OS DADOS REFERENTES NO BANCO 
 include "consultar.php";
 
 while($exibe = mysqli_fetch_assoc($r_user)){

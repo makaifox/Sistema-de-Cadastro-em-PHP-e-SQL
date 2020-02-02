@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 02-Fev-2020 às 20:23
+-- Tempo de geração: 03-Fev-2020 às 00:56
 -- Versão do servidor: 10.4.11-MariaDB
 -- versão do PHP: 7.2.26
 
@@ -63,7 +63,8 @@ INSERT INTO `cadastro` (`CODIGO`, `TIPO_DE_PESSOA`, `NOME`, `NOME_FANTASIA`, `CP
 (6, '2', 'EXEMPLO6', '', '123.456.789-10', '', '', 'Rua Aimoré', '', '', '26564-400', 'Jacutinga', 'Mesquita', '', '', '', 1, 1, 1),
 (7, '2', 'EXEMPLO7', '', '123.456.789-10', '', '', 'Rua Aimoré', '', '', '26564-400', 'Jacutinga', 'Mesquita', '', '', '', 1, 1, 1),
 (8, '2', 'EXEMPLO8', '', '123.456.789-10', '', '', 'Rua Aimoré', '', '', '26564-400', 'Jacutinga', 'Mesquita', '', '', '', 1, 1, 1),
-(9, '2', 'EXEMPLO9', '', '123.456.789-10', '', '', 'Rua Aimoré', '', '', '26564-400', 'Jacutinga', 'Mesquita', '', '', '', 0, 0, 0);
+(9, '2', 'EXEMPLO9', '', '123.456.789-10', '', '', 'Rua Aimoré', '', '', '26564-400', 'Jacutinga', 'Mesquita', '', '', '', 0, 0, 0),
+(12, '2', 'EXEMPLO12', '', '123.456.789-12', '', '', 'CARREGANDO ENDEREçO...', '', '', '26256-564', 'CARREGANDO ENDEREçO...', 'CARREGANDO ENDEREçO...', '', '', '', 1, 0, 0);
 
 --
 -- Índices para tabelas despejadas
