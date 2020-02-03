@@ -51,9 +51,9 @@ form ul {
   <form id="consulta" name="consulta" method="post" action="consulta.php" class=" justify-content-center center-block bg-light">
     <ul class="list-group">
       <li><select name="sel_tipo_de_pessoa" id="sel_tipo_de_pessoa" >
-          <option value="NOME">Nome</option>
-          <option value="TIPO_DE_PESSOA">Pessoa Física</option>
-          <option value="TIPO_DE_PESSOA">Pessoa Jurídica</option>
+          <option value="NOME">Nome </option>
+          <option value="NOME_FANTASIA">Nome Fantasia</option>
+          <option value="RAZAO_SOCIAL">Razão Social</option>
           <option value="CPF">CPF</option>
           <option value="CNPJ">CNPJ</option>
           <option value="CLIENTE">Cliente</option>
@@ -91,7 +91,7 @@ form ul {
     </tr>
 <?php
 // PHP BUSCA OS DADOS REFERENTES NO BANCO 
-include "consultar.php";
+include "consultar_exe.php";
 
 while($exibe = mysqli_fetch_assoc($r_user)){
 
