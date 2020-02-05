@@ -22,4 +22,5 @@ $r_user = @mysqli_query($cx, $result_usur);
 
 
 error_reporting(0);
+
 ?>

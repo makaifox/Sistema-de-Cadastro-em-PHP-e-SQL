@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 03-Fev-2020 às 23:26
+-- Tempo de geração: 05-Fev-2020 às 02:22
 -- Versão do servidor: 10.4.11-MariaDB
 -- versão do PHP: 7.2.26
 
@@ -55,24 +55,8 @@ CREATE TABLE `cadastro` (
 --
 
 INSERT INTO `cadastro` (`CODIGO`, `TIPO_DE_PESSOA`, `NOME`, `NOME_FANTASIA`, `CPF`, `CNPJ`, `RAZAO_SOCIAL`, `ENDERECO`, `NUMERO`, `COMPLEMENTO`, `CEP`, `MUNICIPIO`, `CIDADE`, `EMAIL`, `TELEFONE`, `CELULAR`, `CLIENTE`, `FORNECEDOR`, `FUNCIONARIO`) VALUES
-(1, '2', 'EXEMPLO1', '', '123.456.789-10', '', '', 'Rua Aimoré', '', '', '26564-400', 'Jacutinga', 'Mesquita', '', '', '', 1, 1, 1),
-(2, '2', 'EXEMPLO2', '', '123.456.789-10', '', '', 'Rua Aimoré', '', '', '26564-400', 'Jacutinga', 'Mesquita', '', '', '', 1, 1, 1),
-(3, '2', 'EXEMPLO3', '', '123.456.789-10', '', '', 'Rua Aimoré', '', '', '26564-400', 'Jacutinga', 'Mesquita', '', '', '', 1, 1, 1),
-(4, '2', 'EXEMPLO4', '', '123.456.789-10', '', '', 'Rua Aimoré', '', '', '26564-400', 'Jacutinga', 'Mesquita', '', '', '', 1, 1, 1),
-(5, '2', 'EXEMPLO5', '', '123.454.687-97', '', '', 'Rua Aimoré', '', '', '26564-400', 'Jacutinga', 'Mesquita', '', '', '', 1, 0, 0),
-(6, '2', 'EXEMPLO6', '', '123.456.789-10', '', '', 'Rua Aimoré', '', '', '26564-400', 'Jacutinga', 'Mesquita', '', '', '', 1, 1, 1),
-(7, '2', 'EXEMPLO7', '', '123.456.789-10', '', '', 'Rua Aimoré', '', '', '26564-400', 'Jacutinga', 'Mesquita', '', '', '', 1, 1, 1),
-(8, '2', 'EXEMPLO8', '', '123.456.789-10', '', '', 'Rua Aimoré', '', '', '26564-400', 'Jacutinga', 'Mesquita', '', '', '', 1, 1, 1),
-(9, '2', 'EXEMPLO9', '', '123.456.789-10', '', '', 'Rua Aimoré', '', '', '26564-400', 'Jacutinga', 'Mesquita', '', '', '', 0, 0, 0),
-(12, '2', 'EXEMPLO12', '', '123.456.789-12', '', '', 'CARREGANDO ENDEREçO...', '', '', '26256-564', 'CARREGANDO ENDEREçO...', 'CARREGANDO ENDEREçO...', '', '', '', 1, 0, 0),
-(14, '3', '', 'TOTAL CONTROL SHOP', '', '04753171000142', 'TOTAL CONTROL INFORMATICA EIRELI', 'RUA LEANDRO MARTINS', '00047', '', '20.080-070', 'CENTRO', 'RIO DE JANEIRO', 'FINANCEIRO@TOTALCONTROL.COM.BR', '(21) 3232-3737', '', 0, 1, 0),
-(15, '3', '', 'TOTAL CONTROL SHOP', '', '04753171000142', 'TOTAL CONTROL INFORMATICA EIRELI', 'RUA LEANDRO MARTINS', '00047', '', '20.080-070', 'CENTRO', 'RIO DE JANEIRO', 'FINANCEIRO@TOTALCONTROL.COM.BR', '(21) 3232-3737', '', 0, 1, 0),
-(213261, 'Selecione...', '', 'TOTAL CONTROL SHOP', '', '04753171000142', 'TOTAL CONTROL INFORMATICA EIRELI', 'RUA LEANDRO MARTINS', '00047', '', '20.080-070', 'CENTRO', 'RIO DE JANEIRO', 'FINANCEIRO@TOTALCONTROL.COM.BR', '(21) 3232-3737', '', 0, 1, 0),
-(213262, '3', '', 'TOTAL CONTROL SHOP', '', '04753171000142', 'TOTAL CONTROL INFORMATICA EIRELI', 'RUA LEANDRO MARTINS', '00047', '', '20.080-070', 'CENTRO', 'RIO DE JANEIRO', 'FINANCEIRO@TOTALCONTROL.COM.BR', '(21) 3232-3737', '', 0, 1, 0),
-(213263, '3', '', 'TOTAL CONTROL SHOP', '', '04753171000142', 'TOTAL CONTROL INFORMATICA EIRELI', '', '00047', '', '20.080-070', '', 'RIO DE JANEIRO', 'FINANCEIRO@TOTALCONTROL.COM.BR', '(21) 3232-3737', '', 0, 1, 0),
-(213264, '3', '', 'TOTAL CONTROL SHOP', '', '04753171000142', 'TOTAL CONTROL INFORMATICA EIRELI', 'RUA LEANDRO MARTINS', '00047', '', '20.080-070', 'CENTRO', 'RIO DE JANEIRO', 'FINANCEIRO@TOTALCONTROL.COM.BR', '(21) 3232-3737', '', 0, 1, 0),
-(213265, '3', '', 'TOTAL CONTROL SHOP', '', '04753171000142', 'TOTAL CONTROL INFORMATICA EIRELI', 'RUA LEANDRO MARTINS', '00047', '', '20.080-070', 'CENTRO', 'RIO DE JANEIRO', 'FINANCEIRO@TOTALCONTROL.COM.BR', '(21) 3232-3737', '', 0, 1, 0),
-(213266, 'Selecione...', '', 'TOTAL CONTROL SHOP', '', '04753171000142', 'TOTAL CONTROL INFORMATICA EIRELI', 'RUA LEANDRO MARTINS', '00047', '', '20.080-070', 'CENTRO', 'RIO DE JANEIRO', 'FINANCEIRO@TOTALCONTROL.COM.BR', '(21) 3232-3737', '', 0, 1, 0);
+(1, 'PF', 'EXEMPLO PF', '', '123.456.789-10', '', '', 'AVENIDA MARECHAL FLORIANO 1', '', '', '20080-900', 'CENTRO', 'RIO DE JANEIRO', '', '', '', 0, 1, 0),
+(2, 'PJ', '', 'TOTAL CONTROL SHOP', '', '04753171000142', 'TOTAL CONTROL INFORMATICA EIRELI', 'RUA LEANDRO MARTINS', '00047', '', '20.080-070', 'CENTRO', 'RIO DE JANEIRO', 'FINANCEIRO@TOTALCONTROL.COM.BR', '(21) 3232-3737', '', 1, 1, 0);
 
 --
 -- Índices para tabelas despejadas
@@ -92,7 +76,7 @@ ALTER TABLE `cadastro`
 -- AUTO_INCREMENT de tabela `cadastro`
 --
 ALTER TABLE `cadastro`
-  MODIFY `CODIGO` int(30) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=213267;
+  MODIFY `CODIGO` int(30) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=213269;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

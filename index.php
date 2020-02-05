@@ -44,13 +44,13 @@ function verifica(value){
     var razao_so = document.getElementById("nome");
     var fantasia = document.getElementById("fantasia");
 
-  if(value == 2){
+  if(value == "PF"){
     nomePF.disabled = false;
     cpf.disabled = false;
     cnpj.disabled = true;
     razao_so.disabled = true;
     fantasia.disabled = true;
-  }else if(value == 3){
+  }else if(value == "PJ"){
     nomePF.disabled = true;
     cpf.disabled = true;
     cnpj.disabled = false;
@@ -93,8 +93,8 @@ function verifica(value){
       <td>Tipo de Pessoa:</td>
       <td><select name="tipo_de_pessoa" id="tipo_de_pessoa" onchange="verifica(this.value)" required>
         <option ></option>
-        <option value="2">PESSOA FÍSICA</option>
-        <option value="3">PESSOA JURÍDICA</option>
+        <option value="PF">PESSOA FÍSICA</option>
+        <option value="PJ">PESSOA JURÍDICA</option>
           </select>
         <span class="style1">*      </span></td>
     </tr>

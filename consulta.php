@@ -92,9 +92,15 @@ form ul {
     
 <?php
 // PHP BUSCA OS DADOS REFERENTES NO BANCO 
+
+function _bool($b){
+  return $b ? 'SIM' : 'NÃO';
+}
+
 include "consultar_exe.php";
 
 while($exibe = mysqli_fetch_assoc($r_user)){
+
 
 ?>
 
@@ -112,10 +118,10 @@ while($exibe = mysqli_fetch_assoc($r_user)){
     <td ><?php echo $exibe['MUNICIPIO'] .' ';?></td>
     <td ><?php echo $exibe['EMAIL'] .' ';?></td>
     <td> <?php echo $exibe['TELEFONE'] .' ';?></td>
-    <td ><?php echo $exibe['CELULAR'] .' ';?></td>
-    <td ><?php echo $exibe['CLIENTE'] .' '.(boolval() ? 'true' : 'false')."\n";;?></td>
-    <td ><?php echo $exibe['FORNECEDOR'] .' '.(boolval() ? 'true' : 'false')."\n";;?></td>
-    <td ><?php echo $exibe['FUNCIONARIO'] .' '.(boolval() ? 'true' : 'false')."\n";;?></td>
+    <td ><?php echo $exibe['CELULAR']  . ' ';?></td>
+    <td ><?php echo _bool( $exibe['CLIENTE']) .' ';?></td>
+    <td ><?php echo _bool( $exibe['FORNECEDOR']) .' ';?></td>
+    <td ><?php echo _bool( $exibe['FUNCIONARIO']) .' ';?></td>
   </tr >
 <?php
 }
