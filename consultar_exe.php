@@ -18,8 +18,8 @@ $str = strtoupper($str);
 
 $result_usur = "SELECT * FROM cadastro WHERE  $catBusca LIKE '%".$str."%' ";
 
-$r_user = mysqli_query($cx, $result_usur) or die(mysqli_error($cx));
+$r_user = @mysqli_query($cx, $result_usur); 
 
 
-
+error_reporting(0);
 ?>

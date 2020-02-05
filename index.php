@@ -64,26 +64,26 @@ function verifica(value){
 
 </head>
 
-<body class="bg-primary row d-flex justify-content-center">
+<body class="bg-primary row d-flex justify-content-center w-100 p-3 ">
 
 
-<nav >
-      <ul class="nav justify-content-center  bg-light ">
+<nav class= "w-100 p-3 ">
+      <ul class="nav justify-content-center  bg-light rounded ">
         <li class="nav-item">
-          <a class="nav-link active" href="index.php">Cadastro de Clientes</a>
+          <a class="nav-link active btn" href="index.php">Cadastro de Clientes</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="Consulta.php">Consulta</a></li>
+          <a class="nav-link btn" href="Consulta.php">Consulta</a></li>
 
       </ul>
   </nav>
-  <div class="col-md-6 bg-light" >
+  <div class="col-md-6 bg-light rounded " >
  
     <!--FORMULARIO DE CADASTRO  -->
-    <h1 class="card-header blockquote text-center">FORMULÁRIO DE CADASTRO</h1>
+    <h1 class="card-header blockquote text-center rounded">FORMULÁRIO DE CADASTRO</h1>
     <br>
 <form id="post" name="cadastro" method="post" action="cadastro.php" action="javascript:void(0)" onsubmit="return validaCampo(); return false;" >
-  <table width="625"  class="tabela ">
+  <table width="625"  class="tabela  ">
   <tr>
       <td width="40">Código:</td>
       <td width="30"><input name="codigo" type="text" id="codigo" size="30" maxlength="30" required>
@@ -99,36 +99,36 @@ function verifica(value){
         <span class="style1">*      </span></td>
     </tr>
     <tr>
-      <td width="69">Nome:</td>
-      <td width="546"><input name="nomePF" type="text" id="nomePF" size="70" maxlength="60" class="up"  required/>
+      <td >Nome:</td>
+      <td><input name="nomePF" type="text" id="nomePF" size="50" maxlength="60" class="up"  required/>
         <span class="style1">*</span></td>
     </tr>
     <tr>
-      <td width="69">CPF:</td>
-      <td><input type="text" name="cpf" id="cpf" maxlength="11"  required/>
-        <span class="style1">*</span></td>
+      <td >CPF:</td>
+      <td><input type="text" name="cpf" id="cpf" maxlength="14" OnKeyPress="formatarcampo('###.###.###-##', this)" required/>
+        <span class="style1">apenas digitos*</span></td>
     </tr>
 		<tr>
       <td>CNPJ:</td>
-      <td><input name="cnpj" type="text" id="cnpj" maxlength="14" required/><span class="style1"> apenas digitos*</span></td></td>
+      <td><input name="cnpj" type="text" id="cnpj" maxlength="18"  required/><span class="style1" > apenas digitos*</span></td></td>
     </tr>
     <tr>
-      <td width="69">Nome Fantasia:</td>
-      <td width="546"><input name="fantasia" type="text" id="fantasia" size="70" maxlength="60" class="up" /></td>
+      <td >Nome Fantasia:</td>
+      <td ><input name="fantasia" type="text" id="fantasia" size="50" maxlength="60" class="up" /></td>
     </tr>
     <tr>
-      <td width="69">Razão Social:</td>
-      <td width="546"><input name="nome" type="text" id="nome" size="70" maxlength="60" class="up" required/>
+      <td >Razão Social:</td>
+      <td><input name="nome" type="text" id="nome" size="50" maxlength="60" class="up" required/>
         <span class="style1">*</span></td>
     </tr>
     <tr>
     <tr>
       <td>CEP:</td>
       <td><input name="cep" type="text" id="cep"  maxlength="9" OnKeyPress="formatarcampo('#####-###', this)" onblur= "pesquisacep(this.value);" required/> 
-        <span class="style1">*</span></td>
+        <span class="style1">apenas digitos*</span></td>
     </tr>
     <td>Endereço:</td>
-      <td><input name="endereco" type="text" id="rua" size="70" maxlength="70" class="up" required/>
+      <td><input name="endereco" type="text" id="rua" size="50" maxlength="70" class="up" required/>
         <span class="style1">*</span></td>
     </tr>
     <tr>
@@ -152,7 +152,7 @@ function verifica(value){
     </tr>
   <tr>  
      <td>Email:</td>
-      <td><input name="email" type="email" id="email" size="70" maxlength="60" class="up"/></td>
+      <td><input name="email" type="email" id="email" size="50" maxlength="60" class="up"/></td>
     </tr>
 
 
@@ -289,6 +289,9 @@ function verifica(value){
         }
     };
   //FIM DA API DE CEP 
+
+
+
 </script>
 
 

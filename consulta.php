@@ -10,8 +10,7 @@
     width:100%;
   }
   .table-hover{
-    margin-top: 5%;
-    margin-left: 20%;
+    margin-top: 3%;
     font-size:10px;
     width: 30%;
     height: 70%;
@@ -26,6 +25,7 @@ form ul {
   margin-left: 25%;
   width:100%;
   position:fixed absolute;
+  list-style-type: none;
 }
 .text {
   text-transform:uppercase;
@@ -35,23 +35,23 @@ form ul {
 
 </head>
 
-<body class="bg-primary justify-content-center">
+<body class="bg-primary justify-content-center w-100 p-3">
 <!-- Início da página -->
-<nav>
-<ul class="nav justify-content-center bg-light center-block">
+<nav class="w-100 p-3" > 
+<ul class="nav justify-content-center bg-light center-block rounded">
   <li class="nav-item">
-    <a class="nav-link " href="index.php">Cadastro de Clientes</a>
+    <a class="nav-link btn" href="index.php">Cadastro de Clientes</a>
   </li>
   <li class="nav-item">
-    <a class="nav-link active" href="Consulta.php">Consulta</a>
+    <a class="nav-link active btn" href="Consulta.php">Consulta</a>
 
 </ul>
-  </nav>
+  
     
-  <form id="consulta" name="consulta" method="post" action="consulta.php" class=" justify-content-center center-block bg-light">
-    <ul class="list-group">
+  <form id="consulta" name="consulta" method="post" action="consulta.php" class=" justify-content-center center-block bg-light w-100 p-3 rounded" >
+    <ul class="list-group ">
       <li><select name="sel_tipo_de_pessoa" id="sel_tipo_de_pessoa" >
-          <option value="NOME">Nome </option>
+          <option value="NOME" selected>Nome </option>
           <option value="NOME_FANTASIA">Nome Fantasia</option>
           <option value="RAZAO_SOCIAL">Razão Social</option>
           <option value="CPF">CPF</option>
@@ -67,7 +67,7 @@ form ul {
 </form>
 
 <!-- Inicio da tabela --> 
-    <table  border="2"  cellspacing="0" class=" table-hover center-block bg-light" >
+    <table  border="2"  cellspacing="0" class=" table-hover center-block bg-light w-100 p-3" >
   
 <tr>
       <th >Codigo</th>
@@ -89,6 +89,7 @@ form ul {
       <th >Funcionário</th>
 
     </tr>
+    
 <?php
 // PHP BUSCA OS DADOS REFERENTES NO BANCO 
 include "consultar_exe.php";
@@ -112,9 +113,9 @@ while($exibe = mysqli_fetch_assoc($r_user)){
     <td ><?php echo $exibe['EMAIL'] .' ';?></td>
     <td> <?php echo $exibe['TELEFONE'] .' ';?></td>
     <td ><?php echo $exibe['CELULAR'] .' ';?></td>
-    <td ><?php echo $exibe['CLIENTE'] .' ';?></td>
-    <td ><?php echo $exibe['FORNECEDOR'] .' ';?></td>
-    <td ><?php echo $exibe['FUNCIONARIO'] .' ';?></td>
+    <td ><?php echo $exibe['CLIENTE'] .' '.(boolval() ? 'true' : 'false')."\n";;?></td>
+    <td ><?php echo $exibe['FORNECEDOR'] .' '.(boolval() ? 'true' : 'false')."\n";;?></td>
+    <td ><?php echo $exibe['FUNCIONARIO'] .' '.(boolval() ? 'true' : 'false')."\n";;?></td>
   </tr >
 <?php
 }
@@ -122,6 +123,6 @@ while($exibe = mysqli_fetch_assoc($r_user)){
 
 
 ?>
-
+</table>
 </body>
 </hmtl>
