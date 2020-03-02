@@ -73,7 +73,7 @@ function verifica(value){
           <a class="nav-link active btn" href="index.php">Cadastro de Clientes</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link btn" href="Consulta.php">Consulta</a></li>
+          <a class="nav-link btn" href="consulta.php">Consulta</a></li>
 
       </ul>
   </nav>
